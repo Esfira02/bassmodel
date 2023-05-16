@@ -4,7 +4,7 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
@@ -34,8 +34,8 @@ setup(
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='bassmodel',
-    name='bassmodel',
-    packages=find_packages(include=['bassmodel', 'bassmodel.*']),
+    name='innovationdiffusion',
+    packages=find_packages(include=['innovationdiffusion', 'innovationdiffusion.*']),
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/esfira02/bassmodel',

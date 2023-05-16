@@ -19,7 +19,7 @@ Example
 Let's demonstrate a small example on a sales dataset of gaming consoles for the period 2005 - 2017.
 
 ```python
-from bassmodel import bassmodel
+import innovationdiffusion
 import pandas as pd
 
 xbox = pd.read_excel("xbox_sales.xlsx")
@@ -36,17 +36,17 @@ p0 = [0.2, 0.2, total_market]
 
 # Use NLS to derive p, q, and m values from existing data.
 # This may be later used for a look-alike analysis for another innovation
-popt, pcov = bassmodel.nls(time_axis.values, y_axis, False, p0)
+popt, pcov = innovationdiffusion.nls(time_axis.values, y_axis, False, p0)
 p, q, m = popt
 
-predicted = bassmodel.predict_values(time_axis.values, p, q, m, False)
+predicted = innovationdiffusion.predict_values(time_axis.values, p, q, m, False)
 predicted
 
 # Plot real and predicted values together
-bassmodel.plot(time_axis, xbox["Sales"].values, predicted, legends=["Predicted sales", "Real sales"])
+innovationdiffusion.plot(time_axis, xbox["Sales"].values, predicted, legends=["Predicted sales", "Real sales"])
 
 # Output model summary
-bassmodel.summary(xbox["Sales"].values, predicted, time_axis.values)
+innovationdiffusion.summary(xbox["Sales"].values, predicted, time_axis.values)
 ```
 ![Relayed plot example](https://raw.githubusercontent.com/Esfira02/bassmodel/main/plot_example.PNG)
 
