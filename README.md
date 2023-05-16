@@ -1,5 +1,4 @@
-
-bassmodel
+innovationdiffusion
 =========
 
 Implementation of the Bass Model for innovation diffusion.
