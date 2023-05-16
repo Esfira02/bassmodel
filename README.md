@@ -48,7 +48,7 @@ bassmodel.plot(time_axis, xbox["Sales"].values, predicted, legends=["Predicted s
 # Output model summary
 bassmodel.summary(xbox["Sales"].values, predicted, time_axis.values)
 ```
-![Relayed plot example](plot_example.png)
+![Relayed plot example](https://raw.githubusercontent.com/Esfira02/bassmodel/main/plot_example.PNG)
 
 Credits
 -------
