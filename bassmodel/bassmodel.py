@@ -82,8 +82,8 @@ def plot(time_axis, actual_values, predicted_values, legends=None, xlabel="Time 
             figsize (tuple of ints): Size of plot canvas. Defaults to (10, 8)
     """ # noqa
     plt.figure(figsize=figsize)
-    plt.plot(time_axis, predicted_values, color=line_color, linewidth=3)
     plt.bar(time_axis, actual_values, color=bar_color)
+    plt.plot(time_axis, predicted_values, color=line_color, linewidth=3)
     plt.legend(legends)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)

@@ -10,7 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['numpy', 'scipy', 'stasmodels', 'matplotlib']
+requirements = ['numpy', 'scipy', 'statsmodels', 'matplotlib']
 
 test_requirements = []
 
